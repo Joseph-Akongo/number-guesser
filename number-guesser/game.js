@@ -15,7 +15,7 @@ const nextRoundButton = document.getElementById('next-round')
 
 guessButton.addEventListener('click', () => {
   // Generate the target value
-  target = generateTarget();
+  target = __generateTarget();
   // Retrieve the player's guess
   const currentHumanGuess = humanGuessInput.value;
   // Make a random 'computer guess'
@@ -26,7 +26,7 @@ guessButton.addEventListener('click', () => {
   targetNumberDisplay.innerText = target;
   
   // Determine if the human or computer wins:
-  const humanIsWinner = compareGuesses(currentHumanGuess, computerGuess, target)
+  const humanIsWinner = __compareGuesses(currentHumanGuess, computerGuess, target)
   const winner = humanIsWinner ? 'human' : 'computer'
 
   // Update the correct score:

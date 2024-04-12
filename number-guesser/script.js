@@ -20,7 +20,7 @@ function compareGuesses(userGuess, computerGuess, targetNumber) {
     }
 }
 
-function updateScore(winner) {
+function __updateScore(winner) {
     if (winner === 'human') {
         humanScore++;
     } else if (winner === 'computer') {
@@ -28,7 +28,7 @@ function updateScore(winner) {
     }
 }
 
-function advanceRound() {
+function __advanceRound() {
     currentRoundNumber++;
 }
 
